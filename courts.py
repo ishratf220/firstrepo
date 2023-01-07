@@ -13,7 +13,7 @@ for newFile in os.listdir(pathToDir):
     fileNameOpen = open(fileName, encoding="utf8")
     soup = bs(fileNameOpen, 'html.parser')
     try:
-        sentence = soup.find('span', {'class': 'contro'})
+        sentence = soup.find('p', {'class': 'contro'})
         sentenceChild = sentence.contents
         dictionary['Contro'] = sentenceChild
     except:
