@@ -15,7 +15,7 @@ for newFile in os.listdir(pathToDir):
     try:
         sentence = soup.find('p', {'class': 'popolo'})
         sentenceChild = sentence.text
-        dictionary['Contro'] = sentenceChild
+        dictionary['SENTENZA'] = sentenceChild
     except:
         pass
 #    try:
