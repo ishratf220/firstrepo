@@ -1,3 +1,11 @@
+import os
+from bs4 import BeautifulSoup as bs
+import pandas as pd
+import csv
+dictionary = {}
+df = pd.DataFrame.from_dict(dictionary, orient="index")
+pathToDir = r'C:\Users\Ishrat Fatima\Desktop\court\_Pagina_0-500\_Pagina_0-500'
+arr = os.listdir(pathToDir)
 for newFile in os.listdir(pathToDir):
 
     fileName = os.path.join(pathToDir, newFile)
